@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#111213, #242431);
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.user-profile .user-name {
+  color: lightgray;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.links {
+  padding: 100px;
+  padding-bottom: 10vh;
+}
+
+.link-container {
+  width: 50vw;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #0085ff;
+  transition: 300ms ease-in;
+  margin: 14px auto;
+  cursor: pointer;
+  color: #d7d9e4;
+  border-radius: 0px;
+}
+a.link-container {
+  text-decoration: none;
+  transition: 300ms ease-in;
+}
+.link-container:hover {
+  color: white;
+  transition: 300ms ease-in;
+  background: linear-gradient(
+    -45deg,
+    #0498dd,
+    #0085ff,
+    #1941d3,
+    #3933ee,
+    #008cce
+  );
+  background-size: 400% 400%;
+  animation: gradient 5s ease-in-out infinite;
+  border: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
